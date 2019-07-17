@@ -10,33 +10,34 @@
       </ul>
     </div>
   <% end %>
+  <div class="form-group">
+    <div class="form-control">>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+    <div class="form-control">>
+      <%= form.label :start_date %>
+      <%= form.datetime_select :start_date %>
+    </div>
 
-  <div class="field">
-    <%= form.label :start_date %>
-    <%= form.datetime_select :start_date %>
-  </div>
+    <div class="form-control">>
+      <%= form.label :end_date %>
+      <%= form.datetime_select :end_date %>
+    </div>
 
-  <div class="field">
-    <%= form.label :end_date %>
-    <%= form.datetime_select :end_date %>
-  </div>
+    <div class="form-control">>
+      <%= form.label :max_students %>
+      <%= form.number_field :max_students %>
+    </div>
 
-  <div class="field">
-    <%= form.label :max_students %>
-    <%= form.number_field :max_students %>
-  </div>
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_area :description %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
 <% end %>
+</div>
