@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Event.create(name: 'Dotnet School', start_date: DateTime.now, end_date: 6.weeks.from_now, 
+  description: 'excelent way to learn dotnet')
+User.create(email: 'admin@meeho.com', first_name: 'Ana', 
+last_name: 'Barrios', date_of_birth: DateTime.new(1990,5,1))  
